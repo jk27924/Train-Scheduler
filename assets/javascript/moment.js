@@ -78,6 +78,17 @@ database.ref().on("child_added", function (childSnapshot) {
 
     // To calculate the arrival time, add the tMinutes to the currrent time
     var tArrival = moment().add(tMinutes, "m").format("hh:mm A");
+
+    // Creates the new row, and appends to the table
+        // Creates a cell with input value,
+        // and appends as newly created Row.
+    var newRow = $("<tr>").append(
+        $("<td>").text(trainName),
+        $("<td>").text(destination),
+        $("<td>").text(frequency),
+        $("<td>").text(tArrival),
+        $("<td>").text(tMinutes),
+    );
 });
 
 // PSEUDO CODING

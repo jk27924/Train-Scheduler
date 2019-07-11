@@ -50,6 +50,9 @@ $("#addTrainBtn").on("click", function (event) {
     // Uploads the new train data to the database
     database.ref().push(newTrain);
 
+    // Alert
+    alert(newTrain.name + " has been successfully added");
+
 
 
 });

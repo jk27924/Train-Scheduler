@@ -47,6 +47,10 @@ $("#addTrainBtn").on("click", function (event) {
     };
     console.log(newTrain);
 
+    // Uploads the new train data to the database
+    database.ref().push(newTrain);
+
+
 
 });
 

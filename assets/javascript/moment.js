@@ -16,6 +16,11 @@ var firebaseConfig = {
 // Get a reference to the database
 var database = firebase.database();
 
+//Current time
+$("#currentTime").append(moment().format("hh:mm A"));
+
+
+
 // PSEUDO CODING
     // Current Time shows time for Now.
     // Click to add Button will send the input values to the Table.

@@ -1,13 +1,14 @@
-$(document).ready(function() {
+// Web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDNWsKJBKuMPXEP_J2KX_6C65jEAGmnyCI",
+    authDomain: "my-awsome-project-ccfcf.firebaseapp.com",
+    databaseURL: "https://my-awsome-project-ccfcf.firebaseio.com",
+    projectId: "my-awsome-project-ccfcf",
+    storageBucket: "",
+    messagingSenderId: "803700745900",
+    appId: "1:803700745900:web:becdf39b2554f746"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-
-
-
-
-
-
-
-
-
-    
-})
+// ---------------------------------------------------

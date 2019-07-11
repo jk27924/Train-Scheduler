@@ -1,3 +1,12 @@
+// PSEUDO CODING
+    // Current Time shows time for Now.
+    // Click to add Button will send the input values to the Table.
+    // Input values will clear, when button is clickes.
+    // Use event.preventDefault() to prevent stored date on table not to disappear when refresh the page.
+    // If user repeats to fill and to click the button, the train information appends.
+
+// ---------------------------------------------------
+
 // Web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyDNWsKJBKuMPXEP_J2KX_6C65jEAGmnyCI",
@@ -89,11 +98,8 @@ database.ref().on("child_added", function (childSnapshot) {
         $("<td>").text(tArrival),
         $("<td>").text(tMinutes),
     );
+
+    // Append the new row to the table
+    $("#trainTable").append(newRow);
 });
 
-// PSEUDO CODING
-    // Current Time shows time for Now.
-    // Click to add Button will send the input values to the Table.
-    // Input values will clear, when button is clickes.
-    // Use event.preventDefault() to prevent stored date on table not to disappear when refresh the page.
-    // If user repeats to fill and to click the button, the train information appends.

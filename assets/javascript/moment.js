@@ -53,8 +53,11 @@ $("#addTrainBtn").on("click", function (event) {
     // Alert
     alert(newTrain.name + " has been successfully added");
 
-
-
+    // Clears all of the input values in text-boxes
+    $("#trainNameInput").val("");
+    $("#destinationInput").val("");
+    $("#firstTrainInput").val("");
+    $("#frequencyInput").val("");
 });
 
 

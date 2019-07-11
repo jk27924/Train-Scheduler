@@ -35,6 +35,8 @@
         
         <div class="row">
             <div class="col-md-12">
+
+                <!-- Current Train Information -->
                 <div class="card mb-4">
                     <div class="text-center card-header">Current Train Information</div>
                     <div class="text-center card-body">
@@ -52,11 +54,51 @@
                             </tbody>
                         </table>
                     </div>
-                </div>    
+                </div>
+
             </div>
         </div>
 
-         
+        <div class="row">
+            <div class="col-md-12">
+                
+                <!-- Add Train -->
+                <div class="card mb-4">
+                    <div class="card-header">Add Train</div>
+                    <div class="card-body">
+
+                        <!-- Entry Form -->
+                        <form> 
+                            <div class="form-group">
+                                <label for="trainNameInput">Train Name</label>
+                                <input class="form-control" id="trainNameInput" placeholder="Choo Choo"
+                                type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="destinationInput">Destination</label>
+                                <input class="form-control" id="destinationInput" placeholder="New York" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="firstTrainInput">First Train Time (HH:mm - military time)</label>
+                                <input class="form-control" id="firstTrainInput" placeholder="12:00"
+                                type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="frequencyInput">Frequency (min)</label>
+                                <input class="form-control" id="frequencyInput" placeholder="30"
+                                type="text">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+ 
 
 
 

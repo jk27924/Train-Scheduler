@@ -1,0 +1,10 @@
+.jumbotron h1{
+    font-family: 'Barriecito', cursive;
+    font-size: 60px;
+}
+
+.jumbotron p {
+    font-size: 35px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 20px;
+}

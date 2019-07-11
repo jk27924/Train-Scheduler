@@ -72,6 +72,12 @@ database.ref().on("child_added", function (childSnapshot) {
     // Calculates the Difference between Now and the First Train time in Seconds (by unix), and convert the Seconds into Minutes / Frequency
     var tRemainder = moment().diff(moment.unix(firstTrain), "minutes") % frequency;
     console.log(tRemainder);
+
+    // Calculates minutes until next train
+    var tMinutes = frequency - tRemainder;
+
+
+
 });
 
 // PSEUDO CODING

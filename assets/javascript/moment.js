@@ -19,6 +19,18 @@ var database = firebase.database();
 //Current time
 $("#currentTime").append(moment().format("hh:mm A"));
 
+// Button for adding trains
+$("#addTrainBtn").on("click", function (event) {
+
+    // Prevents default action to occur, when addTrainBtn is clicked
+    event.preventDefault();
+
+
+
+
+
+
+});
 
 
 // PSEUDO CODING

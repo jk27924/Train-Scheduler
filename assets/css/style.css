@@ -19,3 +19,15 @@
 .form-group {
     font-family: 'Raleway', sans-serif; 
 }
+
+.btn {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(90, 89, 89);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+}

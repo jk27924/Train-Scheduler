@@ -40,3 +40,10 @@ body {
     height: 40px;
     margin-top: 10px;
 }
+
+#trainNameInput,
+#destinationInput,
+#firstTrainInput,
+#frequencyInput {
+    margin-top: 10px;
+}

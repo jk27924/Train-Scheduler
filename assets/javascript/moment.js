@@ -61,6 +61,19 @@ $("#addTrainBtn").on("click", function (event) {
 });
 
 
+// Create Firebase event for adding trains to the database and a row in the html when a user adds an entry
+database.ref().on("child_added", function (childSnapshot) {
+
+    var trainName = childSnapshot.val().name;
+    var destination = childSnapshot.val().destination;
+    var firstTrain = childSnapshot.val().firstTrain;
+    var frequency = childSnapshot.val().frequency;
+
+    // Calculates the Difference between Now and the First Train time in Seconds (by unix), and convert the Seconds into Minutes / Frequency
+    var tRemainder = moment().diff(moment.unix(firstTrain), "minutes") % frequency;
+    console.log(tRemainder);
+});
+
 // PSEUDO CODING
     // Current Time shows time for Now.
     // Click to add Button will send the input values to the Table.

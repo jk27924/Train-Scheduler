@@ -76,8 +76,8 @@ database.ref().on("child_added", function (childSnapshot) {
     // Calculates minutes until next train
     var tMinutes = frequency - tRemainder;
 
-
-
+    // To calculate the arrival time, add the tMinutes to the currrent time
+    var tArrival = moment().add(tMinutes, "m").format("hh:mm A");
 });
 
 // PSEUDO CODING

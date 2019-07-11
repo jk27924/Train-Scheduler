@@ -25,7 +25,15 @@ $("#addTrainBtn").on("click", function (event) {
     // Prevents default action to occur, when addTrainBtn is clicked
     event.preventDefault();
 
-
+    // Grabs user input
+    var trainName = $("#trainNameInput").val().trim();
+    console.log(trainName);
+    var destination = $("#destinationInput").val().trim();
+    console.log(destination);
+    var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").format("X");
+    console.log(firstTrain);
+    var frequency = $("#frequencyInput").val().trim();
+    console.log(frequency);
 
 
 

@@ -18,10 +18,18 @@ body {
     padding-top: 20px;
 }
 
+#currentTime {
+    font-size: 25px;
+}
+
 .card-header {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bolder;
     font-size: 20px;
+}
+
+#tableHead {
+    font-weight: bolder;
 }
 
 .table,
@@ -39,6 +47,10 @@ body {
     width: 200px;
     height: 40px;
     margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(241, 172, 43);
 }
 
 #trainNameInput,

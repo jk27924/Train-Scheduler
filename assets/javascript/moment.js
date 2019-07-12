@@ -89,8 +89,7 @@ database.ref().on("child_added", function (childSnapshot) {
     var tArrival = moment().add(tMinutes, "m").format("hh:mm A");
 
     // Creates the new row, and appends to the table
-        // Creates a cell with input value,
-        // and appends as newly created Row.
+        // Creates cells with input value to form a new row
     var newRow = $("<tr>").append(
         $("<td>").text(trainName),
         $("<td>").text(destination),
@@ -100,6 +99,7 @@ database.ref().on("child_added", function (childSnapshot) {
     );
 
     // Append the new row to the table
-    $("#trainTable").append(newRow);
+        // Instead of targetting any tag in the HTML that has the ID of "trainTable" with $("#trainTable").append(newRow); (It still works for this specific Work)
+        // Using $("#trainTable > tbody").append(newRow); more specificlly targets tags that are 'tbody' and are children of a tag with the ID of "trainTable"
+    $("#trainTable > tbody").append(newRow);
 });
-

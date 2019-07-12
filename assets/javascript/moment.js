@@ -41,7 +41,7 @@ $("#addTrainBtn").on("click", function (event) {
     var destination = $("#destinationInput").val().trim();
     console.log(destination);
 
-    var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").format("X");
+    var firstTrain = moment($("#firstTrainInput").val().trim(), "HH:mm").format("X"); // Shows time with format of “HH:mm”, and convert the amount of time passed into seconds.
     console.log(firstTrain);
 
     var frequency = $("#frequencyInput").val().trim();

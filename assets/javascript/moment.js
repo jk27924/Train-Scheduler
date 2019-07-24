@@ -79,7 +79,9 @@ database.ref().on("child_added", function (childSnapshot) {
     var frequency = childSnapshot.val().frequency;
 
     // Calculates the Difference between Now and the First Train time in Seconds (by unix), and convert the Seconds into Minutes / Frequency
-    var tRemainder = moment().diff(moment.unix(firstTrain), "minutes") % frequency;
+    // .subtract(1, "years") MEANS assuming the very first train time one year ago, so I would always get positive number when calculated.
+        // Without it .subtract(1, "years"), If the first train time is in the future, the number becomes negative, so messes up the calculation.
+    var tRemainder = moment().diff(moment.unix(firstTrain).subtract(1, "years"), "minutes") % frequency;
     console.log(tRemainder);
 
     // Calculates minutes until next train
